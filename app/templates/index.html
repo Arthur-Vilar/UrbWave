@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product List</title>
+</head>
+<body>
+    <h1>Product List</h1>
+    <a href="/product/new">Add New Product</a>
+    <ul>
+        {% for product in products %}
+        <li>
+            <strong>{{ product.name }}</strong>: {{ product.description }}
+            - ${{ product.price }} ({{ product.quantity }} units)
+            <a href="/product/edit/{{ product.id }}">Edit</a>
+            <form action="/product/delete/{{ product.id }}" method="post" style="display: inline;">
+                <button type="submit">Delete</button>
+            </form>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
