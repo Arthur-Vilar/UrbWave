@@ -9,3 +9,16 @@ class Product(db.Model):
 
     def __repr__(self):
         return f'<Product {self.name}>'
+    
+class Order(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    product_id = db.Column(db.Integer, db.ForeignKey('product.id'), nullable=False)
+    quantity = db.Column(db.Integer, nullable=False, default=1)
+    total_price = db.Column(db.Float, nullable=False)
+    status = db.Column(db.String(50), nullable=False, default='Pendente')  # Status do pedido
+    payment_method = db.Column(db.String(50), nullable=False)  # Método de pagamento
+
+    product = db.relationship('Product', backref=db.backref('orders', lazy=True))
+
+    def __repr__(self):
+        return f'<Order {self.id} - Produto: {self.product.name} - Status: {self.status}>'

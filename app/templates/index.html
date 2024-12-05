@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Lista de Produtos</title>
+    <title>Banco de Dados</title>
 </head>
 <body>
-    <h1>Produtos</h1>
+    <h1>Banco de Dados</h1>
+    <h2>Produtos</h2>
     <a href="{{ url_for('main.new_product') }}">Adicionar Produto</a>
     <ul>
         {% for product in products %}
         <li>
-            Nome: {{ product.name }} - Preço: R$ {{ product.price }} - Quantidade: {{ product.quantity }}
-            <br>
-            Descrição: {{ product.description }}
-            <br>
+            {{ product.name }} - R$ {{ product.price }}
             <a href="{{ url_for('main.edit_product', product_id=product.id) }}">Editar</a>
             <a href="{{ url_for('main.delete_product', product_id=product.id) }}">Excluir</a>
         </li>
         {% endfor %}
     </ul>
+    <hr>
+    <h2>Pedidos</h2>
+    <a href="{{ url_for('main.orders') }}">Ver Pedidos</a>
 </body>
 </html>
