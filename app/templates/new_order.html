@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Novo Pedido</title>
+</head>
+<body>
+    <h1>Novo Pedido</h1>
+    <form method="POST">
+        Produto:
+        <select name="product_id" required>
+            {% for product in products %}
+            <option value="{{ product.id }}">{{ product.name }}</option>
+            {% endfor %}
+        </select><br>
+        Cliente:
+        <select name="customer_id" required>
+            {% for customer in customers %}
+            <option value="{{ customer.id }}">{{ customer.name }}</option>
+            {% endfor %}
+        </select><br>
+        Quantidade: <input type="number" name="quantity" min="1" required><br>
+        Método de Pagamento:
+        <select name="payment_method" required>
+            <option value="Cartão de Crédito">Cartão de Crédito</option>
+            <option value="Boleto">Boleto</option>
+            <option value="Pix">Pix</option>
+        </select><br>
+        Status:
+        <select name="status" required>
+            <option value="Pendente">Pendente</option>
+            <option value="Processando">Processando</option>
+            <option value="Concluído">Concluído</option>
+            <option value="Cancelado">Cancelado</option>
+        </select><br>
+        <button type="submit">Criar Pedido</button>
+    </form>
+</body>
+</html>

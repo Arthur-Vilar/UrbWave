@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pedidos</title>
+</head>
+<body>
+    <h1>Pedidos</h1>
+    <a href="{{ url_for('main.new_order') }}">Criar Pedido</a>
+    <a href="{{ url_for('main.index') }}">Voltar</a>
+    <ul>
+        {% for order in orders %}
+        <li>
+            Pedido #{{ order.id }} - {{ order.product.name }} ({{ order.quantity }} unidade(s))  
+            - Total: R$ {{ order.total_price }}  
+            - Status: {{ order.status }}  
+            - Pagamento: {{ order.payment_method }}
+            <a href="{{ url_for('main.delete_order', order_id=order.id) }}">Excluir</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
