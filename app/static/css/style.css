@@ -125,14 +125,13 @@ div#menu{
 div#menu i.exit_menu{
     margin-left: 6%;
     margin-top: 8%;
-    margin-bottom: 23%;
+    margin-bottom: 15%;
     cursor: pointer;
     padding: 2rem;
 }
 
 div#menu ul#menu_options{
     margin-inline: 3rem;
-
 }
 
 div#menu ul#menu_options li{
@@ -149,7 +148,7 @@ div#menu ul#menu_options li a{
 
 div#menu div#account{
     justify-content: center;
-    margin-block: 25vh 0;
+    margin-block: 12vh 0;
     display: flex;
     gap: 2rem;
 }
