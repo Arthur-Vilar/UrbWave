@@ -27,6 +27,7 @@ form input[type = 'submit']#entrar{
     background-color: #65468a;
     color: white;
     cursor: pointer;
+    padding: 2rem 10rem;
 }
 
 form div#email_area, form div#password_area{

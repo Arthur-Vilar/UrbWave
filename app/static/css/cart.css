@@ -1,0 +1,34 @@
+main#cart_main{
+
+}
+
+main#cart_main p#empty_cart{
+    font-size: 2rem;
+    color: #65468a;
+    margin-left: 10rem;
+}
+
+main#cart_main div#buttons{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 6rem;
+    margin-right: 5rem;
+    display: flex;
+    gap: 2rem;
+}
+
+main#cart_main div#buttons button{
+    padding: 2rem 4rem;
+    cursor: pointer;
+}
+
+main#cart_main div#buttons button#finish_purchase{
+    background-color: #65468a;
+    color: white;
+}
+
+main#cart_main div#buttons button#stay_shopping{
+    background-color: #d2ccda;
+    color: #65468a;
+}
