@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    max-width: 100%;
+}
+
+:root{
+    --bg_color: #d6d8d7;
+    --nav_color: #A5A7A6;
+}
+
+html{
+    font-size: 62.5%;
+
+}
+
+header#header_princ{
+    background-color: var(--bg_color);
+    height: 100vh;
+    padding-top: 7.5rem;
+    background-image: url(../images/produtos/fundo/FundoPrincipal.svg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header.faixa_roxa{
+    margin-top: 7rem;
+    background-color: #65468a;
+    text-align: center;
+    padding-block: 2rem;
+}
+
+main.center_content{
+    text-align: center;
+
+}
+
+main.center_content p#need_help, p#login_text, p#register_text, p#cart_text{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    color: #65468a;
+}
+
+main.center_content p#contato{
+    margin-top: 7rem;
+    font-size: 2.4rem;
+    color: #65468a;
+
+}
+
+nav{
+    background-color: rgba(165, 167, 166, .4);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    height: 11rem;
+}
+
+img.logo{
+    width: 20rem;
+    height: 5rem;
+}
+
+ul#menu_ul{
+    display: flex;
+    gap: 6rem;
+    width: 50%;
+    justify-content: space-around;
+
+}
+
+ul#menu_ul a{
+    text-decoration: none;
+}
+
+ul#menu_ul li.menu_ul_li{
+    font-size: 2.6rem;
+    color: black;
+    font-weight: 600;
+}
+
+input#search_bar{
+    width: 20rem;
+    height: 3.6rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+input#search_bar:focus{
+    padding: 1.2rem;
+}
+
+button#btn-search{
+    background-color: unset;
+}
+
+i#menu_button{
+    background-color: unset;
+    cursor: pointer;
+    padding: 2rem;
+}
+
+div#menu{
+    position: fixed;
+    overflow: auto;
+    width: 40vw;
+    height: 165rem;
+    background-color: rgba(217, 217, 217, .95);
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+div#menu i.exit_menu{
+    margin-left: 6%;
+    margin-top: 8%;
+    margin-bottom: 23%;
+    cursor: pointer;
+    padding: 2rem;
+}
+
+div#menu ul#menu_options{
+    margin-inline: 3rem;
+
+}
+
+div#menu ul#menu_options li{
+    color: #65468a;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #65468a;
+    font-size: 2.4rem;
+}
+
+div#menu ul#menu_options li a{
+    text-decoration: none;
+}
+
+div#menu div#account{
+    justify-content: center;
+    margin-block: 25vh 0;
+    display: flex;
+    gap: 2rem;
+}
+
+div#menu div#account a{
+    font-size: 2.2rem;
+    color: #65468a;
+    text-decoration: none;
+}
+
+div#menu div#account a#login{
+    padding-right: 2rem;
+    border-right: 2px solid #65468a;
+}
+
+aside #aside_div{
+    margin: 30vh 0 15vh 0;
+    background-image: url(../images/produtos/fundo/image.png);
+    height: 80vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main .flex_products{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    margin-bottom: 12rem;
+}
+
+main .flex_products div.product{
+    width:20%;
+    height: 50rem;
+    background-color: #ebebeb;
+}
+
+main .flex_products div.product img.vector{
+    height: 10%;
+    width: 12.5%;
+    margin-top: 5%;
+    margin-left: 8%;
+}
+
+main .flex_products div.product img.img_product{
+    
+    height: 85%;
+    width: 100%;
+}
+
+main .flex_products div.product div.product_desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 1.5rem;
+    gap: 1rem;
+}
+
+main .flex_products div.product div.product_desc p.product_name{
+    font-size: 2rem;
+}
+
+main .flex_products div.product div.product_desc p.product_price{
+    font-size: 2.2rem;
+    font-weight: bolder;
+}

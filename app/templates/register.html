@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/login.css">
+    <link rel="stylesheet" href="../static/css/register.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="faixa_roxa">
+        <a href="index.html"><img class="logo" src="../static/images/produtos/icones/logo_urbwave.png" alt=""></a>
+    </header>
+
+    <main class="center_content">
+        <p id="register_text">Cadastro</p>
+    </main>
+
+    <main id="register_main">
+        <div id="register_pessoal">
+            <form action="  ">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label for="name">*Nome completo</label>
+                    <input required type="text" name="name" id="name">
+                    <label for="date">*Data de nascimento</label>
+                    <input required type="date" name="date" id="date">
+                    <label for="cpf">*CPF</label>
+                    <input required type="text" name="cpf" id="cpf">
+                    <label for="telefone">*Telefone</label>
+                    <input required type="number" name="telefone" id="telefone">
+                    <label for="email">*Email</label>
+                    <input required type="email" name="email" id="email">
+                    <label for="password">*Senha</label>
+                    <input required type="password" name="password" id="password">
+                    <label for="re_password">*Repita a senha</label>
+                    <input required type="password" name="re_password" id="re_password">
+                </fieldset>
+                <fieldset>
+                    <legend>Dados de Entrega</legend>
+                    <label for="cep">*Cep</label>
+                    <input required type="number" name="cep" id="cep">
+                    <label for="n">*N</label>
+                    <input required type="number" name="n" id="n">
+                    <label for="complemento">*Complemento</label>
+                    <input required type="text" name="complemento" id="complemento">
+                    <label for="bairro">*Bairro</label>
+                    <input required type="text" name="bairro" id="bairro">
+                    <label for="city">*Cidade</label>
+                    <input required type="text" name="city" id="city">
+                    <label for="estado">*Estado</label>
+                    <input required type="text" name="estado" id="estado">
+                    <label for="país">*País</label>
+                    <input required type="text" name="pais" id="pais">
+                </fieldset>
+                <input type="submit" value="Cadastrar" id="register_button">
+            </form>
+            
+        </div>
+    </main>
+</body>
+</html>

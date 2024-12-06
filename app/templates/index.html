@@ -1,1 +1,330 @@
-<h1>Eu sou corinthiano</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbWave</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header id="header_princ">
+        
+        <nav>
+
+            <a href="index.html"><img class="logo" src="../static/images/produtos/icones/logo_urbwave.png" alt="Logo UrbWave"></a>
+
+            <ul id="menu_ul">
+                <a href="">
+                    <li class="menu_ul_li">Masculino</li>
+                </a>
+                <a href="">
+                    <li class="menu_ul_li">Feminino</li>
+                </a>
+                <a href="">
+                    <li class="menu_ul_li">Calçados</li>
+                </a>
+                <a href="">
+                    <li class="menu_ul_li">Acessórios</li>
+                </a>
+                <a href="">
+                    <li class="menu_ul_li">Promoções</li>
+                </a>
+            </ul>
+
+            <div id="search_div">
+                <input id="search_bar" type="search" onkeyup="search()">
+                <button id="btn-search" type="submit"><i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #121212;"></i></button>
+                
+            </div>
+
+            <i class="fa-solid fa-bars fa-2xl" id="menu_button" onclick="clickMenu()"></i>
+
+            <div id="menu">
+                <i onclick="exitMenu()" class="fa-sharp fa-solid fa-x fa-2xl exit_menu" style="color: #000000;"></i>
+
+                <ul id="menu_options">
+                    <li><a href="help.html" target="_blank">AJUDA</a></li>
+                    <li><a href="">MEUS PEDIDOS</a></li>
+                    <li><a href="cart.html" target="_blank">CARRINHO</a></li>
+                    <li><a href="">MEUS ENDEREÇOS</a></li>
+                    <li><a href="">CARTÕES</a></li>
+                    <li><a href="">CONFIGURAÇÃO</a></li>
+                </ul>
+
+                <div id="account">
+                    <a href="login.html" target="_blank" id="login">Fazer login</a>
+                    <a href="register.html" target="_blank" id="register">Cadastre-se</a>
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <div id="gap_div">
+
+    </div>
+
+    <aside>
+        <div id="aside_div">
+            
+        </div>
+    </aside>
+
+    <main>
+
+        <div class="flex_products">
+            <div class="product">
+                <img class="vector" src="../static/images/produtos/icones/Vector.png" alt="promoção">
+                <img class="img_product" src="../static/images/produtos/promoções/WhatsApp Image 2024-09-30 at 14.21.34.png" alt="">
+                <div class="product_desc">
+                    <p class="product_name">Camiseta azul caveira</p>
+                    <p class="product_price">R$89,00</p>
+                </div>
+            </div>
+            <div class="product">
+                <img class="vector" src="../static/images/produtos/icones/Vector.png" alt="promoção">
+                <img class="img_product" src="../static/images/produtos/promoções/WhatsApp Image 2024-09-30 at 14.21.34 (1).png" alt="">
+                <div class="product_desc">
+                    <p class="product_name">Cropped manga misbhv</p>
+                    <p class="product_price">R$95,00</p>
+                </div>
+            </div>
+            <div class="product">
+                <img class="vector" src="../static/images/produtos/icones/Vector.png" alt="promoção">
+                <img class="img_product" src="../static/images/produtos/promoções/WhatsApp Image 2024-09-30 at 14.21.33.png" alt="">
+                <div class="product_desc">
+                    <p class="product_name">Calça misbhv folgada</p>
+                    <p class="product_price">R$129,90</p>
+                </div> 
+            </div>
+            <div class="product">
+                <img class="vector" src="../static/images/produtos/icones/Vector.png" alt="promoção">
+                <img class="img_product" src="../static/images/produtos/promoções/WhatsApp Image 2024-09-30 at 14.21.35.png" alt="">
+                <div class="product_desc">
+                    <p class="product_name">Cropped manga moletom decotado azul</p>
+                    <p class="product_price">R$80,00</p>
+                </div> 
+            </div>
+        </div>
+
+        <div class="flex_products">
+            <div class="product">
+                <img class="vector" src="../static/images/produtos/icones/Vector.png" alt="promoção">
+                <img class="img_product" src="../static/images/produtos/promoções/WhatsApp Image 2024-09-30 at 14.21.36.png" alt="">
+                <div class="product_desc">
+                    <p class="product_name">Camisa yeshibounty preta e branca</p>
+                    <p class="product_price">R$89,99</p>
+                </div> 
+            </div>
+            <div class="product">
+                <img class="vector" src="../static/images/produtos/icones/Vector.png" alt="promoção">
+                <img class="img_product" src="../static/images/produtos/promoções/WhatsApp Image 2024-09-30 at 14.21.36 (1).png" alt="">
+                <div class="product_desc">
+                    <p class="product_name">Moletom lavagem averdada I had</p>
+                    <p class="product_price">R$120,80</p>
+                </div> 
+            </div>
+            <div class="product">
+                <img class="vector" src="../static/images/produtos/icones/Vector.png" alt="promoção">
+                <img class="img_product" src="../static/images/produtos/promoções/WhatsApp Image 2024-09-30 at 14.21.36 (2).png" alt="">
+                <div class="product_desc">
+                    <p class="product_name">Bermuda jeans preta com bolsos laterais</p>
+                    <p class="product_price">R$99,80</p>
+                </div> 
+            </div>
+            <div class="product">
+                <img class="vector" src="../static/images/produtos/icones/Vector.png" alt="promoção">
+                <img class="img_product" src="../static/images/produtos/promoções/WhatsApp Image 2024-09-30 at 14.49.57.png" alt="">
+                <div class="product_desc">
+                    <p class="product_name">Calça street jeans claro com bolsos</p>
+                    <p class="product_price">R$170,00</p>
+                </div> 
+            </div>
+        </div>
+
+        <div class="flex_products">
+            <div class="product">
+                <img class="vector" src="../static/images/produtos/icones/Vector.png" alt="promoção">
+                <img class="img_product" src="../static/images/produtos/promoções/WhatsApp Image 2024-10-04 at 14.31.13.png" alt="">
+                <div class="product_desc">
+                    <p class="product_name">Camisa choize preta com listras laterais </p>
+                    <p class="product_price">R$65,80</p>
+                </div> 
+            </div>
+
+            <div class="product">
+                <img class="vector" src="../static/images/produtos/icones/Vector.png" alt="promoção">
+                <img class="img_product" src="../static/images/produtos/promoções/WhatsApp Image 2024-09-30 at 13.46.11.png" alt="">
+                <div class="product_desc">
+                    <p class="product_name">Camiseta helfriceden azul com branco</p>
+                    <p class="product_price">R$99,90</p>
+                </div> 
+            </div>
+
+            <div class="product">
+                <img class="vector" src="../static/images/produtos/icones/Vector.png" alt="promoção">
+                <img class="img_product" src="../static/images/produtos/promoções/WhatsApp Image 2024-10-04 at 14.31.13 (1).png" alt="">
+                <div class="product_desc">
+                    <p class="product_name">bermuda jeans com estrela bordada</p>
+                    <p class="product_price">R$120,90</p>
+                </div> 
+            </div>
+
+            <div class="product">
+                <img class="vector" src="../static/images/produtos/icones/Vector.png" alt="promoção">
+                <img class="img_product" src="../static/images/produtos/promoções/WhatsApp Image 2024-10-04 at 14.31.13 (2).png" alt="">
+                <div class="product_desc">
+                    <p class="product_name">Cropped com gola bege com detalhes marrons</p>
+                    <p class="product_price">R$170,00</p>
+                </div> 
+            </div>
+        </div>
+
+        <div class="flex_products">
+            <div class="product">
+                <img class="vector" src="../static/images/produtos/icones/Vector.png" alt="promoção">
+                <img class="img_product" src="../static/images/produtos/promoções/WhatsApp Image 2024-10-04 at 14.31.12.png" alt="">
+                <div class="product_desc">
+                    <p class="product_name">Cropped azul básico</p>
+                    <p class="product_price">R$69,99</p>
+                </div> 
+            </div>
+
+            <div class="product">
+                <img class="vector" src="../static/images/produtos/icones/Vector.png" alt="promoção">
+                <img class="img_product" src="../static/images/produtos/promoções/WhatsApp Image 2024-10-04 at 15.04.00.png" alt="">
+                <div class="product_desc">
+                    <p class="product_name">Tênis rebook club</p>
+                    <p class="product_price">R$320,90</p>
+                </div> 
+            </div>
+
+            <div class="product">
+                <img class="vector" src="../static/images/produtos/icones/Vector.png" alt="promoção">
+                <img class="img_product" src="../static/images/produtos/promoções/WhatsApp Image 2024-10-04 at 14.31.13 (3).png" alt="">
+                <div class="product_desc">
+                    <p class="product_name">Camiseta branca Crawl</p>
+                    <p class="product_price">R$60,90</p>
+                </div> 
+            </div>
+            
+            <div class="product">
+                <img class="vector" src="../static/images/produtos/icones/Vector.png" alt="promoção">
+                <img class="img_product" src="../static/images/produtos/promoções/WhatsApp Image 2024-10-04 at 15.03.59 (1).png" alt="">
+                <div class="product_desc">
+                    <p class="product_name">Tênis asics-grl venture</p>
+                    <p class="product_price">R$280,00</p>
+                </div> 
+            </div>
+        </div>
+
+        <div class="flex_products">
+            <div class="product">
+                <img class="vector" src="../static/images/produtos/icones/Vector.png" alt="promoção">
+                <img class="img_product" src="../static/images/produtos/promoções/WhatsApp Image 2024-10-04 at 15.03.59 (2).png" alt="">
+                <div class="product_desc">
+                    <p class="product_name">Chapéu jeans preto rabisco</p>
+                    <p class="product_price">R$72,99</p>
+                </div> 
+            </div>
+
+            <div class="product">
+                <img class="vector" src="../static/images/produtos/icones/Vector.png" alt="promoção">
+                <img class="img_product" src="../static/images/produtos/promoções/WhatsApp Image 2024-10-04 at 15.03.58 (2).png" alt="">
+                <div class="product_desc">
+                    <p class="product_name">Óculos y2k preto</p>
+                    <p class="product_price">R$56,90</p>
+                </div> 
+            </div>
+
+            <div class="product">
+                <img class="vector" src="../static/images/produtos/icones/Vector.png" alt="promoção">
+                <img class="img_product" src="../static/images/produtos/promoções/WhatsApp Image 2024-10-04 at 15.03.58 (3).png" alt="">
+                <div class="product_desc">
+                    <p class="product_name">Óculos y2k cinza</p>
+                    <p class="product_price">R$82,90</p>
+                </div> 
+            </div>
+            
+            <div class="product">
+                <img class="vector" src="../static/images/produtos/icones/Vector.png" alt="promoção">
+                <img class="img_product" src="../static/images/produtos/promoções/WhatsApp Image 2024-10-04 at 15.03.59 (3).png" alt="">
+                <div class="product_desc">
+                    <p class="product_name">Relógio adidas branco</p>
+                    <p class="product_price">R$220,00</p>
+                </div> 
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+
+
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- 
+<div class="flex_products">
+            <div class="product">
+                <img class="vector" src="../static/images/produtos/icones/Vector.png" alt="promoção">
+                <img class="img_product" src="../static/images/produtos/promoções/" alt="">
+                <div class="product_desc">
+                    <p class="product_name"></p>
+                    <p class="product_price">R$</p>
+                </div> 
+            </div>
+
+            <div class="product">
+                <img class="vector" src="../static/images/produtos/icones/Vector.png" alt="promoção">
+                <img class="img_product" src="../static/images/produtos/promoções/" alt="">
+                <div class="product_desc">
+                    <p class="product_name"></p>
+                    <p class="product_price">R$</p>
+                </div> 
+            </div>
+
+            <div class="product">
+                <img class="vector" src="../static/images/produtos/icones/Vector.png" alt="promoção">
+                <img class="img_product" src="../static/images/produtos/promoções/" alt="">
+                <div class="product_desc">
+                    <p class="product_name"></p>
+                    <p class="product_price">R$</p>
+                </div> 
+            </div>
+            
+            <div class="product">
+                <img class="vector" src="../static/images/produtos/icones/Vector.png" alt="promoção">
+                <img class="img_product" src="../static/images/produtos/promoções/" alt="">
+                <div class="product_desc">
+                    <p class="product_name"></p>
+                    <p class="product_price">R$</p>
+                </div> 
+            </div>
+        </div>
+-->
+
+
+<!-- 
+
+                <img class="vector" src="../static/images/produtos/icones/Vector.png" alt="promoção">
+                <img class="img_product" src="../static/images/produtos/promoções/" alt="">
+                <div class="product_desc">
+                    <p class="product_name"></p>
+                    <p class="product_price">R$</p>
+                </div> 
+
+-->
