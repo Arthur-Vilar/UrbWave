@@ -125,13 +125,14 @@ div#menu{
 div#menu i.exit_menu{
     margin-left: 6%;
     margin-top: 8%;
-    margin-bottom: 15%;
+    margin-bottom: 23%;
     cursor: pointer;
     padding: 2rem;
 }
 
 div#menu ul#menu_options{
     margin-inline: 3rem;
+
 }
 
 div#menu ul#menu_options li{
@@ -148,70 +149,7 @@ div#menu ul#menu_options li a{
 
 div#menu div#account{
     justify-content: center;
-    margin-block: 12vh 0;
+    margin-block: 25vh 0;
     display: flex;
     gap: 2rem;
-}
-
-div#menu div#account a{
-    font-size: 2.2rem;
-    color: #65468a;
-    text-decoration: none;
-}
-
-div#menu div#account a#login{
-    padding-right: 2rem;
-    border-right: 2px solid #65468a;
-}
-
-aside #aside_div{
-    margin: 30vh 0 15vh 0;
-    background-image: url(../images/produtos/fundo/image.png);
-    height: 80vh;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-main .flex_products{
-    display: flex;
-    gap: 4rem;
-    justify-content: center;
-    margin-bottom: 12rem;
-}
-
-main .flex_products div.product{
-    width:20%;
-    height: 50rem;
-    background-color: #ebebeb;
-}
-
-main .flex_products div.product img.vector{
-    height: 10%;
-    width: 12.5%;
-    margin-top: 5%;
-    margin-left: 8%;
-}
-
-main .flex_products div.product img.img_product{
-    
-    height: 85%;
-    width: 100%;
-}
-
-main .flex_products div.product div.product_desc{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-block: 1.5rem;
-    gap: 1rem;
-}
-
-main .flex_products div.product div.product_desc p.product_name{
-    font-size: 2rem;
-}
-
-main .flex_products div.product div.product_desc p.product_price{
-    font-size: 2.2rem;
-    font-weight: bolder;
 }
